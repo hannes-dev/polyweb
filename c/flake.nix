@@ -15,7 +15,7 @@
         packages.default = pkgs.stdenv.mkDerivation {
           name = "c-web-server";
           version = "0.1.0";
-          src = "./.";
+          src = self;
 
           nativeBuildInputs = [
             pkgs.clang
